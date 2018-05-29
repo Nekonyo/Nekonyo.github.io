@@ -195,14 +195,13 @@
 		};
 		haha = function () {
 			window.clearInterval(ga.data.id);
-			console.log(ga.data.id);
 		}
 		hehe = function () {
 			ga.data.id = window.setInterval(ga.refreshGame, 20);
 			console.log(ga.data.id);
 		}
 		restart = function () {
-			ga.data.id = null;
+			window.clearInterval(ga.data.id);
 			ga.initGame();
 		}
 	</script>
